@@ -46,5 +46,5 @@ const getImage = async () => {
 };
 
 getImage();
-
-setInterval(getImage, 180000);
+const time = process.argv[3] * 1000;
+setInterval(getImage, time || 180000);
